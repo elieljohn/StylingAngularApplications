@@ -1,9 +1,9 @@
-@use '../root/colors';
+@use 'colors';
 
 
 
 
-.l-app-footer {
+.app-footer {
     background: colors.$color__secondary--04a;
     color: #555;
     display: block;
@@ -13,12 +13,12 @@
     padding: 1em 0 3em;
 }
 
-.l-app-footer__title {
+.app-footer__title {
     border-top: solid 1px #444;
     display: block;
     padding: 2.5em 0 0.3em;
 }
 
-.l-app-footer__sub-title {
+.app-footer__sub-title {
     font-size: 0.8em;
 }

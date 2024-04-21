@@ -1,15 +1,15 @@
-@use '../../../scss/root/colors';
+@use 'colors';
 
 
 
-.items {
+.pills {
     display: flex; 
     list-style: none; 
     margin: 1em 0; 
     padding: 0;
 }
-    
-.item__link {
+       
+.pills__item-link {
     background: #efefef;
     background: rgba(colors.$color__secondary--04c, 0.6);
     border-radius: 0.5em;
@@ -19,37 +19,37 @@
     transition: background ease 0.25s;
 }
 
-.item__link:hover {
+.pills__item-link:hover {
     background: colors.$color__secondary--04c;
     text-decoration: none;
 }
 
-.item__link:active {
+.pills__item-link:active {
     color: colors.$color__primary--02b;
 }
 
-.item__link:visited {
+.pills__item-link:visited {
     color: colors.$color__primary--02a;
 }
 
 // First Item
-.item:first-child .item__link {
+.pills__item:first-child .pills__item-link {
     margin-left: 0;
 }
 
 // Selected
-.item__link--selected {
+.pills__item-link--selected {
     background: colors.$color__primary--02a;
     color: white;
 }
 
-.item__link--selected:hover,
-.item__link--selected:active {      
+.pills__item-link--selected:hover,
+.pills__item-link--selected:active {      
     background: colors.$color__primary--02a;          
     color: white;
     cursor: default;                
 }
 
-.item__link--selected:visited {
+.pills__item-link--selected:visited {
     color: white;
 }

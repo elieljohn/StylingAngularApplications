@@ -1,9 +1,9 @@
-@use '../root/colors';
+@use 'colors';
 
 
 
 
-.l-app-header {
+.app-header {
     background: colors.$color__secondary--04a;
     display: block;
     font-family: arial, sans-serif;
@@ -11,10 +11,10 @@
     margin-bottom: 1.8em;
 }
 
-.l-app-header__title {
+.app-header__title {
     color: white;
 }
 
-.l-app-header__sub-title {
+.app-header__sub-title {
     color: #888;
 }
