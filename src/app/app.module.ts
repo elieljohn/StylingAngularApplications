@@ -14,7 +14,7 @@ import { NavBarSecondaryComponent } from './shared/components/navigation/navbar-
 import { PillsComponent }           from './shared/components/navigation/pills/pills.component';
 
 // PopUp Components
-import {
+import { 
   ModalComponent,
   ModalContentDirective }           from './shared/components/popups/modal/modal.component';
 import {
@@ -23,7 +23,7 @@ import {
 
 @NgModule({
   imports:      [ BrowserModule ],
-  declarations: [
+  declarations: [ 
       AppComponent,
       AccordionComponent,
       AccordionPaneComponent,
