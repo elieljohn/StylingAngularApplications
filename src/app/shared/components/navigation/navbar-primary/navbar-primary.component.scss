@@ -15,12 +15,19 @@
 .items {
     @include container.g-layout__container;
     display: flex; 
-    list-style: none;
+    list-style: none; 
 }
 
 
 .item {
     padding: 0 1em;
+
+    &__icon {
+        fill: white;
+        height: 0.8em;
+        margin-right: 0.25em;
+        width: 0.8em;
+    }
 
     &__link {
         color: white; 
@@ -33,13 +40,6 @@
             text-decoration: underline;
         }
 
-    }
-
-    &__icon {
-        fill: white;
-        height: 0.8em;
-        margin-right: 0.25em;
-        width: 0.8em;
     }
 
     // First
