@@ -3,19 +3,23 @@
 
 
 
-.items {
-    @include grid.g-layout__grid;
-}
+:host(.layout--02) {
 
-.item {
-    @include grid.g-layout__grid__item--06;
-
-    &__image {
-        height: 12em;
+    .items {
+        @include grid.g-layout__grid;
     }
 
-    &__content {
-        padding: 0.5em;
+    .item {
+        @include grid.g-layout__grid__item--06;
+
+        &__image {
+            height: 12em;
+        }
+
+        &__content {
+            padding: 0.5em;
+        }
+
     }
 
 }
