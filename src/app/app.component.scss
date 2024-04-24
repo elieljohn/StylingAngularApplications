@@ -7,13 +7,6 @@
 
 
 
-:host {
-    font-size: 1rem;
-}
-
-
-
-
 // Header
 .header {
     background: colors.$g-root__color--secondary--04a;
@@ -21,66 +14,66 @@
     font-family: arial, sans-serif;
     overflow: hidden;
     margin-bottom: 1.8em;
+}
 
-    &__content {
-        @include container.g-layout__container;
-    }
+.header__content {
+    @include container.g-layout__container;
+}
 
-    &__title {
-        @include headers.g-root__h1;
-        color: white;
-    }
+.header__title {
+    @include headers.g-root__h1;
+    color: white;
+}
 
-    &__sub-title {
-        color: #888;
-    }
-
+.header__sub-title {
+    color: #888;
 }
 
 // Content
 .content {
     @include container.g-layout__container;
+}
 
-    &__sections {
-        @include grid.g-layout__grid;
+.content__sections {
+    @include grid.g-layout__grid;
+}
+
+.content__title {
+    @include headers.g-root__h2;
+}
+
+.content__sub-title {
+    @include headers.g-root__h3;
+}
+
+.content__paragraph {
+    @include paragraphs.g-root__paragraph
+}
+
+// Large Viewports
+@media (min-width: 52rem) {
+
+    .content__primary {
+        font-size: 1.5em;
+        @include grid.g-layout__grid__item--08;
     }
 
-    &__title {
-        @include headers.g-root__h2;
+    .content__secondary {
+        @include grid.g-layout__grid__item--04;
     }
 
-    &__sub-title {
-        @include headers.g-root__h3;
+}
+
+// Small Viewports
+@media (max-width: 52rem) {
+
+    .content__primary {
+        font-size: 1.5em;
+        @include grid.g-layout__grid__item--12;
     }
 
-    &__paragraph {
-        @include paragraphs.g-root__paragraph
-    }
-
-    // Large Viewports
-    @media (min-width: 52rem) {
-
-        &__primary {
-            @include grid.g-layout__grid__item--08;
-        }
-
-        &__secondary {
-            @include grid.g-layout__grid__item--04;
-        }
-
-    }
-
-    // Small Viewports
-    @media (max-width: 52rem) {
-
-        &__primary {
-            @include grid.g-layout__grid__item--12;
-        }
-
-        &__secondary {
-            @include grid.g-layout__grid__item--12;
-        }
-
+    .content__secondary {
+        @include grid.g-layout__grid__item--12;
     }
 
 }
@@ -94,19 +87,18 @@
     margin-top: 1.8em;
     overflow: hidden;
     padding: 1em 0 3em;
+}
 
-    &__content {
-        @include container.g-layout__container;
-    }
+.footer__content {
+    @include container.g-layout__container;
+}
 
-    &__title {
-        border-top: solid 1px #444;
-        display: block;
-        padding: 2.5em 0 0.3em;
-    }
+.footer__title {
+    border-top: solid 1px #444;
+    display: block;
+    padding: 2.5em 0 0.3em;
+}
 
-    &__sub-title {
-        font-size: 0.8em;
-    }
-
+.footer__sub-title {
+    font-size: 0.8em;
 }
