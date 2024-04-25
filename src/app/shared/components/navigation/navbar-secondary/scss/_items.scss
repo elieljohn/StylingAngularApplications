@@ -5,7 +5,8 @@
 
 
 .items {
-    @include container.g-layout__container;
+        text-decoration: none;
+        @include container.g-layout__container;
     display: flex; 
     list-style: none; 
 }
