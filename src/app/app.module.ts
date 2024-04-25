@@ -1,6 +1,7 @@
 import { NgModule }                 from '@angular/core';
 import { BrowserModule }            from '@angular/platform-browser';
 import { AppComponent }             from './app.component';
+import { PromoComponent }           from './promo/promo.component';
 
 // Content Components
 import { AccordionComponent }       from './shared/components/content/accordion/accordion.component';
@@ -26,6 +27,7 @@ import {
   imports:      [ BrowserModule ],
   declarations: [ 
       AppComponent,
+      PromoComponent,
       AccordionComponent,
       AccordionPaneComponent,
       TabsComponent,
