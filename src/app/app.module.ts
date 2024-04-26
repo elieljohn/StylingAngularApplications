@@ -22,7 +22,8 @@ import { PillsComponent }           from './shared/components/navigation/pills/p
 // PopUp Components
 import { 
   ModalComponent,
-  ModalContentDirective }           from './shared/components/popups/modal/modal.component';
+  ModalContentDirective,
+  ModalHighlightDirective }         from './shared/components/popups/modal/modal.component';
 import {
   ToolTipComponent,
   TooltipMessageDirective }         from './shared/components/popups/tooltip/tooltip.component';
@@ -45,6 +46,7 @@ import {
       PillsComponent,
       ModalComponent,
       ModalContentDirective,
+      ModalHighlightDirective,
       ToolTipComponent,
       TooltipMessageDirective
   ],
