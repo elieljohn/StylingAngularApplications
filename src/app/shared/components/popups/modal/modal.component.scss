@@ -5,9 +5,4 @@
 // Colors
 @use 'scss/color-01';
 @use 'scss/color-02';
-
-// CSS Custom Properties
-:host {
-    --background: #C43B0E;
-    --foreground: white;
-}
+@use 'scss/color-03';
