@@ -15,4 +15,11 @@ export class MessageContentDirective {}
 
 export class MessageComponent {
     @ContentChild(MessageContentDirective) messageContent: MessageContentDirective;
+    isLayout01 = false;
+
+    constructor(private hostRef: ElementRef) {}
+
+    ngAfterContentInit(): void {
+        this.isLayout01 = this.hostRef.nativeElement.classList.contains('layout--01');
+    }
 }
