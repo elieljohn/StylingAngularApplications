@@ -9,6 +9,10 @@ import { AccordionPaneComponent }   from './shared/components/content/accordion/
 import { TabsComponent }            from './shared/components/content/tabs/tabs.component';
 import { TabsPaneComponent }        from './shared/components/content/tabs/tabs-pane/tabs-pane.component';
 import { ThumbnailListComponent }   from './shared/components/content/thumbnail-list/thumbnail-list.component';
+import {
+  MessageComponent,
+  MessageTitleDirective,
+  MessageContentDirective }         from './shared/components/content/message/message.component';
 
 // Navigation Components
 import { NavBarPrimaryComponent }   from './shared/components/navigation/navbar-primary/navbar-primary.component';
@@ -32,6 +36,9 @@ import {
       AccordionPaneComponent,
       TabsComponent,
       TabsPaneComponent,
+      MessageComponent,
+      MessageTitleDirective,
+      MessageContentDirective,
       ThumbnailListComponent,
       NavBarPrimaryComponent,
       NavBarSecondaryComponent,
